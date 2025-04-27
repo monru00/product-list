@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Product list with cart</title>
+  </head>
+  <body>
+    <main>
+      <div class="overlay"></div>
+      <div class="main-wrapper container">
+        <div class="main-left">
+          <h1>Desserts</h1>
+          <div class="card-grid">
+            <!--This will be added in JS-->
+            <!-- <div class="card">
+              
+              <picture>
+                <source
+                  media="(max-width: 568px)"
+                  srcset="assets/images/image-waffle-mobile.jpg"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="assets/images/image-waffle-tablet.jpg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="assets/images/image-waffle-desktop.jpg"
+                />
+                <img src="assets/images/image-waffle-desktop.jpg" />
+                alt="plate of waffles with strawberries on top"
+              </picture>
+              
+              <div class="btn-container">
+                <button class="add-to-cart-btn">
+                  <img src="assets/images/icon-add-to-cart.svg" alt="" />Add to
+                  Cart
+                </button>
+                <button class="counter-btn">
+                  <img
+                    src="assets/images/icon-decrement-quantity.svg"
+                    alt=""
+                    class="decrement-btn"
+                  />
+                  <h5 class="display-count">4</h5>
+                  <img
+                    src="assets/images/icon-increment-quantity.svg"
+                    alt=""
+                    class="increment-btn"
+                  />
+                </button>
+              </div>
+              <h2 class="category">Waffle</h2>
+              <h3 class="name">Waffle with Berries</h3>
+              <h4 class="price">6.50</h4>
+            </div> -->
+            <!--end of card-->
+          </div>
+        </div>
+        <div class="main-right">
+          <h6>Your Cart (<span class="number-of-cart-items">0</span>)</h6>
+          <div class="your-cart-items-container">
+            <!--We will add this in JS
+
+            <div class="your-cart-wrapper">
+              <div class="your-cart-content">
+                <p class="your-cart-name">Classic Tiramisu</p>
+                <div class="your-cart-count">
+                  <p class="number-of-this-item">1</p>
+                <p class="x">x</p>
+                  <p>
+                    @ $<span class="price-for-one">5.50</span>
+                    <span class="price-total-for-multiples">$5.50</span>
+                  </p>
+                </div>
+              </div>
+              <img
+                src="assets/images/icon-remove-item.svg"
+                alt=""
+                class="remove-btn"
+              />
+            </div>
+-->
+          </div>
+
+          <div class="your-cart-container">
+            <div class="your-cart-container-full">
+              <div class="order-total-container">
+                <p>Order Total</p>
+                <p class="total-bill">$0</p>
+              </div>
+              <div class="carbon-neutral-container">
+                <img src="assets/images/icon-carbon-neutral.svg" alt="" />
+                <p>This is a <span>carbon-neutral </span>delivery</p>
+              </div>
+              <button class="btn-dark confirm-order-btn">Confirm Order</button>
+            </div>
+            <div class="your-cart-container-empty">
+              <img src="assets/images/illustration-empty-cart.svg" alt="" />
+              <p>Your added items will appear here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-confirmed-container">
+        <img src="assets/images/icon-order-confirmed.svg" alt="" />
+        <p class="order-confirmed-title">Order Confirmed</p>
+        <p class="confirmed-p">We hope you enjoy your food!</p>
+
+        <div class="confirmed-cart-item-container">
+          <div class="confirmed-cart-item">
+            <div class="confirmed-left">
+              <img src="assets/images/image-baklava-thumbnail.jpg" alt="" />
+              <div class="confirmed-content">
+                <div class="confirmed-name">Classic Tiramisu</div>
+                <div class="confirmed-unit-container">
+                  <p class="number-of-this-item">1</p>
+                  <p class="x">x</p>
+                  <p class="and">@ <span class="price-for-one">5.50</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="confirmed-total-price">$5.50</div>
+          </div>
+        </div>
+
+        <div class="order-total-container">
+          <p>Order Total</p>
+          <p class="total-bill confirmed-total-bill">$0</p>
+        </div>
+        <button class="btn-dark start-new-order-btn">Start New Order</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
